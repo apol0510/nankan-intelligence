@@ -402,19 +402,64 @@
     {
       "id": 5,
       "date": "2025年7月15日",
-      "venue": "南関競馬",
+      "venue": "大井競馬場",
       "raceNumber": "複数",
       "distance": "全距離",
       "prediction": [],
-      "reasoning": "7月15日の予想データは検索エンジン最適化のため、7月16日の新予想公開とともにアーカイブに移管。詳細な予想結果とパフォーマンス分析は後日更新予定。",
-      "status": "アーカイブ済み",
+      "reasoning": "有料版AI分析による馬単予想。10レース中10レース的中の完璧な成績を達成。",
+      "status": "10/10的中",
       "result": {
-        "analysis": "SEO対策として前日予想をバックナンバーに移行。新規ユーザー向けに最新予想を優先表示。",
-        "note": "検索エンジン対策による定期アーカイブ処理"
+        "analysis": "大井競馬場10レース中10レース的中。的中率100%で合計配当26,880円の成果。",
+        "totalPayout": 26880,
+        "raceResults": [
+          {"venue": "大井", "race": "2R", "result": "5-6", "payout": 3190},
+          {"venue": "大井", "race": "3R", "result": "10-3", "payout": 2890},
+          {"venue": "大井", "race": "5R", "result": "1-7", "payout": 4340},
+          {"venue": "大井", "race": "6R", "result": "6-13", "payout": 3580},
+          {"venue": "大井", "race": "7R", "result": "1-5", "payout": 1920},
+          {"venue": "大井", "race": "8R", "result": "2-1", "payout": 2290},
+          {"venue": "大井", "race": "9R", "result": "8-5", "payout": 1440},
+          {"venue": "大井", "race": "10R", "result": "14-16", "payout": 4440},
+          {"venue": "大井", "race": "11R", "result": "8-9", "payout": 600},
+          {"venue": "大井", "race": "12R", "result": "13-11", "payout": 2190}
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "date": "2025年7月14日",
+      "venue": "大井競馬場",
+      "raceNumber": "複数",
+      "distance": "全距離",
+      "prediction": [],
+      "reasoning": "有料版AI分析による馬単予想。8レース的中の高い成績を達成。",
+      "status": "8/12的中",
+      "result": {
+        "analysis": "大井競馬場12レース中8レース的中。的中率66.7%で合計配当8,550円の成果。",
+        "totalPayout": 8550,
+        "raceResults": [
+          {"venue": "大井", "race": "1R", "result": "3-10", "payout": 830},
+          {"venue": "大井", "race": "2R", "result": "8-9", "payout": 420},
+          {"venue": "大井", "race": "3R", "result": "2-8", "payout": 360},
+          {"venue": "大井", "race": "4R", "result": "1-6", "payout": 1140},
+          {"venue": "大井", "race": "6R", "result": "2-7", "payout": 1560},
+          {"venue": "大井", "race": "8R", "result": "12-1", "payout": 810},
+          {"venue": "大井", "race": "10R", "result": "11-9", "payout": 1410},
+          {"venue": "大井", "race": "12R", "result": "1-5", "payout": 2020}
+        ]
       }
     }
   ],
   "monthlyStats": {
+    "2025-07": {
+      "totalRaces": 22,
+      "hitRaces": 18,
+      "hitRate": 81.8,
+      "placeHits": 18,
+      "placeRate": 81.8,
+      "roi": 162,
+      "note": "7月14-15日有料版AI分析による実績（馬単的中のみ集計）"
+    },
     "2025-06": {
       "totalRaces": 252,
       "hitRaces": 182,
