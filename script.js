@@ -15,16 +15,22 @@ function initializeNavigation() {
     
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
+            const href = this.getAttribute('href');
             
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+            // アンカーリンク（#で始まる）のみスムーススクロールを適用
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             }
+            // 外部リンク（archive.htmlなど）は通常通り遷移
         });
     });
 }
@@ -249,27 +255,185 @@ window.RaceAnalyzer = {
 
 // Archives functionality
 function initializeArchives() {
-    const archiveItems = document.querySelectorAll('.archive-item');
+    console.log('initializeArchives called');
     
-    // Intersection Observer for archive animations
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
+    // 過去予想データを表示
+    displayArchives();
+    
+    // データの表示が完了したら、アニメーションを設定
+    setTimeout(() => {
+        const archiveItems = document.querySelectorAll('.archive-item');
+        console.log('Archive items found:', archiveItems.length);
+        
+        // Intersection Observer for archive animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        archiveItems.forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(item);
         });
-    }, { threshold: 0.1 });
-    
-    archiveItems.forEach(item => {
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(20px)';
-        item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(item);
-    });
+    }, 500);
 }
 
 // Archive management functions
+function loadArchiveData() {
+    // race-data.jsonから直接埋め込み
+    const archiveData = [
+        {
+            "id": 1,
+            "date": "2025年6月30日",
+            "venue": "船橋・大井競馬場",
+            "raceNumber": "複数",
+            "distance": "全距離",
+            "prediction": [],
+            "reasoning": "船橋競馬場7レース + 大井競馬場10レース = 17レース的中（24レース中）。的中率70.8%。",
+            "status": "17/24的中",
+            "result": {
+                "analysis": "船橋・大井両場で24レース中17レース的中。的中率70.8%で合計配当36,960円の成果。",
+                "totalPayout": 36960
+            }
+        },
+        {
+            "id": 2,
+            "date": "2025年7月11日", 
+            "venue": "川崎競馬場",
+            "raceNumber": "複数",
+            "distance": "全距離",
+            "prediction": [],
+            "reasoning": "川崎競馬場12レース中8レースで馬単的中。的中率66.7%を達成。",
+            "status": "8/12的中",
+            "result": {
+                "analysis": "12レース中8レース的中で合計配当17,660円。安定した予想精度を示した。",
+                "totalPayout": 17660
+            }
+        },
+        {
+            "id": 3,
+            "date": "2025年7月14日",
+            "venue": "南関競馬",
+            "raceNumber": 11,
+            "distance": "1200m",
+            "prediction": [
+                {"position": "◎", "horseName": "ケイアイカペラ", "horseNumber": 3},
+                {"position": "○", "horseName": "フクノフードゥル", "horseNumber": 8},
+                {"position": "▲", "horseName": "シンリングンカイ", "horseNumber": 12},
+                {"position": "△", "horseName": "エドノフェニックス", "horseNumber": 1}
+            ],
+            "reasoning": "データから配置を分析。③ケイアイカペラがAI分析で最高評価で「安定度は高い」厩舎コメント。⑧フクノフードゥルは「前進期待」、⑫シンリングンカイは「今回も好勝負」の厩舎コメントを重視。",
+            "status": "結果待ち",
+            "result": null
+        },
+        {
+            "id": 4,
+            "date": "2025年7月15日",
+            "venue": "大井競馬場",
+            "raceNumber": "複数",
+            "distance": "全距離",
+            "prediction": [],
+            "reasoning": "有料版AI分析による馬単予想。12レース中10レース的中の高い成績を達成。",
+            "status": "10/12的中",
+            "result": {
+                "analysis": "大井競馬場12レース中10レース的中。的中率83.3%で合計配当26,880円の成果。",
+                "totalPayout": 26880
+            }
+        },
+        {
+            "id": 5,
+            "date": "2025年7月14日",
+            "venue": "大井競馬場",
+            "raceNumber": "複数", 
+            "distance": "全距離",
+            "prediction": [],
+            "reasoning": "有料版AI分析による馬単予想。8レース的中の高い成績を達成。",
+            "status": "8/12的中",
+            "result": {
+                "analysis": "大井競馬場12レース中8レース的中。的中率66.7%で合計配当8,550円の成果。",
+                "totalPayout": 8550
+            }
+        },
+        {
+            "id": 7,
+            "date": "2025年7月16日",
+            "venue": "大井競馬場",
+            "raceNumber": 11,
+            "distance": "1200m",
+            "prediction": [
+                {"position": "◎", "horseName": "ワンダーランド", "horseNumber": 1},
+                {"position": "○", "horseName": "ティントレット", "horseNumber": 4},
+                {"position": "▲", "horseName": "ランリョウオー", "horseNumber": 3},
+                {"position": "△", "horseName": "タイガーチャージ", "horseNumber": 6}
+            ],
+            "reasoning": "7月16日大井競馬第11レースの予想。1200mスプリント戦でワンダーランドを本命とした構成。",
+            "status": "結果待ち",
+            "result": null
+        }
+    ];
+    
+    return Promise.resolve(archiveData);
+}
+
+function displayArchives() {
+    console.log('displayArchives called');
+    loadArchiveData().then(archives => {
+        console.log('Archives loaded:', archives);
+        const archiveContainer = document.getElementById('archives-content');
+        console.log('Archive container:', archiveContainer);
+        if (!archiveContainer) {
+            console.error('Archive container not found');
+            return;
+        }
+
+        // IDの降順でソート（最新が上）
+        const sortedArchives = archives.sort((a, b) => b.id - a.id);
+        console.log('Sorted archives:', sortedArchives);
+
+        const htmlContent = sortedArchives.map(archive => {
+            const predictionHtml = archive.prediction && archive.prediction.length > 0 
+                ? archive.prediction.map(pred => 
+                    `<span class="archive-prediction">${pred.position} ${pred.horseName} (${pred.horseNumber}番)</span>`
+                  ).join(' ')
+                : '';
+
+            const payoutInfo = archive.result && archive.result.totalPayout 
+                ? `<div class="archive-payout">配当: ${archive.result.totalPayout.toLocaleString()}円</div>`
+                : '';
+
+            const raceNumberDisplay = archive.raceNumber === "複数" ? "" : `第${archive.raceNumber}R`;
+
+            return `
+                <div class="archive-item" data-archive-id="${archive.id}">
+                    <div class="archive-header">
+                        <div class="archive-date">${archive.date}</div>
+                        <div class="archive-venue">${archive.venue} ${raceNumberDisplay}</div>
+                        <div class="archive-status ${archive.status.includes('的中') ? 'status-hit' : 'status-pending'}">${archive.status}</div>
+                    </div>
+                    <div class="archive-details">
+                        <div class="archive-distance">${archive.distance}</div>
+                        ${predictionHtml ? `<div class="archive-predictions">${predictionHtml}</div>` : ''}
+                        ${archive.reasoning ? `<div class="archive-reasoning">${archive.reasoning}</div>` : ''}
+                        ${payoutInfo}
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        console.log('Generated HTML:', htmlContent);
+        archiveContainer.innerHTML = htmlContent;
+        console.log('HTML inserted into container');
+    }).catch(error => {
+        console.error('Error displaying archives:', error);
+    });
+}
+
 function addPredictionToArchive(raceData, prediction, reasoning) {
     const archiveData = {
         id: Date.now(),

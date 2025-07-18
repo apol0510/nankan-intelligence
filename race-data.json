@@ -4,147 +4,177 @@
       "id": 1,
       "venue": "大井競馬場",
       "raceNumber": 11,
-      "raceName": "サンタアニタトロフィー",
-      "distance": "1600m",
+      "raceName": "東京スポーツ賞",
+      "distance": "1800m",
       "surface": "ダート",
-      "condition": "オープン・ハンデ",
+      "condition": "サラ、Ｂ２－２組、選抜",
       "startTime": "20:10",
-      "raceDate": "2025年7月16日",
+      "raceDate": "2025年7月18日",
       "weather": "晴れ",
-      "trackCondition": "良",
-      "prizeMoneyFirst": "1,500万円",
-      "expectedPace": "中団から",
-      "entries": 13,
+      "trackCondition": "重",
+      "prizeMoneyFirst": "8,000,000円",
+      "expectedPace": "ミドルペース",
+      "entries": 8,
       "horses": [
         {
           "number": 1,
-          "name": "ワンダーランド",
-          "age": 4,
+          "name": "ミラコロカナーレ",
+          "age": 7,
           "sex": "牡",
-          "weight": "57.5kg",
-          "jockey": "笹川翼",
-          "trainer": "大藤日",
-          "comment": "距離にやなばぞ"
+          "weight": "56kg",
+          "jockey": "山中悠",
+          "trainer": "大中道",
+          "comment": "ベテランの意地"
         },
         {
           "number": 2,
-          "name": "グランチマーレ",
-          "age": 3,
+          "name": "ゴールデンブザー",
+          "age": 4,
           "sex": "牡",
-          "weight": "55kg",
-          "jockey": "本村重",
-          "trainer": "大坂本",
-          "comment": "道走で穴狙い"
+          "weight": "56kg",
+          "jockey": "和田譲",
+          "trainer": "大宗形",
+          "comment": "中距離適性"
         },
         {
           "number": 3,
-          "name": "ランリョウオー",
-          "age": 7,
-          "sex": "牡",
-          "weight": "57kg",
-          "jockey": "瀬川小久保",
-          "trainer": "浦小久",
-          "comment": "見極めり早村"
-        },
-        {
-          "number": 4,
-          "name": "ティントレット",
-          "age": 4,
-          "sex": "牡",
-          "weight": "58.5kg",
-          "jockey": "小黒山",
-          "trainer": "小黒山",
-          "comment": "相手頭中心"
-        },
-        {
-          "number": 5,
-          "name": "マーズインディ",
-          "age": 10,
-          "sex": "牡",
-          "weight": "55.5kg",
-          "jockey": "大坂本一",
-          "trainer": "大坂本",
-          "comment": "10歳馬威い"
-        },
-        {
-          "number": 6,
-          "name": "タイガーチャージ",
-          "age": 5,
+          "name": "ユウユウスキー",
+          "age": 3,
           "sex": "牡",
           "weight": "55kg",
           "jockey": "吉井章",
-          "trainer": "大高木",
-          "comment": "ここは頭台"
+          "trainer": "大阪本一",
+          "comment": "若馬の勢い"
+        },
+        {
+          "number": 4,
+          "name": "ムットクルフェ",
+          "age": 4,
+          "sex": "セン",
+          "weight": "56kg",
+          "jockey": "矢野貴",
+          "trainer": "大的場直",
+          "comment": "手堆い相手"
+        },
+        {
+          "number": 5,
+          "name": "トウケイカッタロー",
+          "age": 4,
+          "sex": "牝",
+          "weight": "54kg",
+          "jockey": "今野忠",
+          "trainer": "大朝倉",
+          "comment": "牝馬の精神力"
+        },
+        {
+          "number": 6,
+          "name": "スミソニアン",
+          "age": 7,
+          "sex": "牡",
+          "weight": "55kg",
+          "jockey": "鷹見陸",
+          "trainer": "大宗形",
+          "comment": "経験十分"
         },
         {
           "number": 7,
-          "name": "マンダリンヒーロー",
+          "name": "ナックダンス",
           "age": 5,
-          "sex": "牡",
-          "weight": "57kg",
-          "jockey": "野崎章",
-          "trainer": "大高田",
-          "comment": "負担戔酷て"
+          "sex": "牝",
+          "weight": "54kg",
+          "jockey": "藤田凌",
+          "trainer": "大立花伸",
+          "comment": "状態上向"
         },
         {
           "number": 8,
-          "name": "メーサンデュオント",
-          "age": 5,
+          "name": "ファーガス",
+          "age": 6,
           "sex": "牡",
           "weight": "55kg",
-          "jockey": "鈴木智",
+          "jockey": "安藤洋",
           "trainer": "大月岡",
-          "comment": "更に相手強化"
-        },
+          "comment": "展開次第"
+        }
         {
           "number": 9,
-          "name": "ボイシフィストン",
-          "age": 4,
+          "name": "タイガーホール",
+          "age": 3,
           "sex": "牡",
-          "weight": "55.5kg",
-          "jockey": "大高田真",
-          "trainer": "大高田",
-          "comment": "既判れら強嘛"
+          "weight": "56kg",
+          "jockey": "笹川翼",
+          "trainer": "南関",
+          "comment": "パワー十分"
         },
         {
           "number": 10,
-          "name": "ポパリエツィ",
-          "age": 5,
+          "name": "チリアンノース",
+          "age": 3,
           "sex": "牡",
-          "weight": "57kg",
-          "jockey": "浦川久",
-          "trainer": "浦川久",
-          "comment": "展開利ないと"
+          "weight": "56kg",
+          "jockey": "大井上",
+          "trainer": "大井",
+          "comment": "調教充実"
         },
         {
           "number": 11,
-          "name": "イーグルノワール",
-          "age": 4,
+          "name": "ホワイトシールド",
+          "age": 3,
           "sex": "牡",
-          "weight": "57kg",
-          "jockey": "小黒山",
-          "trainer": "小黒山",
-          "comment": "美力馬復調中"
+          "weight": "56kg",
+          "jockey": "石川駿介",
+          "trainer": "船橋",
+          "comment": "底力あり"
         },
         {
           "number": 12,
-          "name": "ゴールドリガンソー",
-          "age": 7,
-          "sex": "牡",
-          "weight": "57.5kg",
-          "jockey": "大高田真",
-          "trainer": "大高田",
-          "comment": "競上頗緊要去"
+          "name": "リオンダリーナ",
+          "age": 3,
+          "sex": "牝",
+          "weight": "54kg",
+          "jockey": "西啓太",
+          "trainer": "大井",
+          "comment": "牝馬実力派"
         },
         {
           "number": 13,
-          "name": "ライラポンド",
-          "age": 6,
+          "name": "ネプティズム",
+          "age": 3,
           "sex": "牡",
-          "weight": "57kg",
-          "jockey": "船新井",
-          "trainer": "船新井",
-          "comment": "叩き距離短縮"
+          "weight": "56kg",
+          "jockey": "森政誠",
+          "trainer": "大井",
+          "comment": "展開次第"
+        },
+        {
+          "number": 14,
+          "name": "フリーダム",
+          "age": 3,
+          "sex": "牝",
+          "weight": "54kg",
+          "jockey": "船橋",
+          "trainer": "船橋",
+          "comment": "大駆け期待"
+        },
+        {
+          "number": 15,
+          "name": "タツノレンカウア",
+          "age": 3,
+          "sex": "牡",
+          "weight": "56kg",
+          "jockey": "本田正重",
+          "trainer": "船橋",
+          "comment": "巻き返し"
+        },
+        {
+          "number": 16,
+          "name": "リベルベロ",
+          "age": 3,
+          "sex": "牝",
+          "weight": "54kg",
+          "jockey": "木間塚龍馬",
+          "trainer": "船橋",
+          "comment": "末脚に期待"
         }
       ]
     }
@@ -152,43 +182,43 @@
   "predictions": [
     {
       "raceId": 1,
-      "analysisDate": "2025-07-16",
+      "analysisDate": "2025-07-17",
       "analyst": "NANKAN Intelligence",
       "predictions": [
         {
           "position": "◎",
-          "horseNumber": 1,
-          "horseName": "ワンダーランド",
-          "confidence": 83,
-          "reasoning": "絶対王者や争いなあるのでプラチナカップを制して、きさき王杯でも勇む馬。決意ない競馬をしてティントレット、元来一流の4歳馬で1600メートルも意つたにべ心の武い装難、58.5キロでも優秀なスプリント以上される術手での今日のタイトル争い"
+          "horseNumber": 4,
+          "horseName": "ムットクルフェ",
+          "confidence": 85,
+          "reasoning": "センディングの手堆い相手で1800mの中距離で実力を発揮。矢野貴騎手の経験と技術で的確なレース運びが期待できる。今回のメンバーなら十分に勝機あり。"
         },
         {
           "position": "○",
-          "horseNumber": 4,
-          "horseName": "ティントレット",
+          "horseNumber": 8,
+          "horseName": "ファーガス",
           "confidence": 78,
-          "reasoning": "プラチナカップを制して、きさき王杯でも勇む馬と決意ない競馬をしてティントレット、先来一流の4歳馬で1600メートルも全力勝負が可能、エインジビストン技術明確で高める力をアビール、展開が向けば最強騎"
+          "reasoning": "6歳馬の経験と安定感が魅力。安藤洋騎手とのコンビで展開次第では上位争いに絡む力あり。中距離での粘り強さが武器。"
         },
         {
           "position": "▲",
-          "horseNumber": 3,
-          "horseName": "ランリョウオー",
-          "confidence": 72,
-          "reasoning": "見限りが早村と短評にあるが朝治(修)金治6①⑥①、ボイシュイクが最速でもハープ以上ので間となによによって自身が肥える、同じようの内で朝をためられればつ内的はり1600メートルでも評算が可能、エインジビストン技術巧妙で高める力をゆきよりライトの展開頭は確答"
+          "horseNumber": 7,
+          "horseName": "ナックダンス",
+          "confidence": 75,
+          "reasoning": "5歳牝馬で状態上向中。藤田凌騎手の積極的な騎乗で穴をあける可能性。牝馬の軽い斜重で有利な馬場状態を活かしたい。"
         },
         {
           "position": "△",
           "horseNumber": 6,
-          "horseName": "タイガーチャージ",
-          "confidence": 68,
-          "reasoning": "ここは頭台とコメントにあるが、朝(修)王③⑤③で、1600メートルもみ天平で、実力戦時も高い。"
+          "horseName": "スミソニアン",
+          "confidence": 70,
+          "reasoning": "7歳のベテランで経験十分。鷹見陸騎手との組み合わせで安定したレースが期待できる。長距離での粘りと最後の一伸びに期待。"
         }
       ],
-      "raceStrategy": "プラチナカップを制して、きさきまでも勇む馬と決意ない競馬をしてティントレット、先来一流の4歳馬で1600メートルも全力勝負が可能。今日は戦4歳の第1回入者中心で、最開かがずらく感する、ゴールドリガンソンは地元に戻って音緩騎手が税税、巻き選じに要注。",
-      "paceAnalysis": "ベース H 近行(修)③ 好位①④⑥①、中位-団　後方② 、ボイシュイサが最速でもハープ以上ので間となによによって自身が肥える、同じようの内で朝をためられればつ内的はり1600メートルでも評算が可能、エインジビストン技術巧妙で高める力をゆきよりライトの展開頭は確答。",
+      "raceStrategy": "サラブレッド系B2-2組の選抜レース。1800mの中距離戦でミドルペースからの持続力勝負が予想される。重馬場でのパワーとスタミナが重要。経験豊富な中年馬と若馬の力関係に注目。",
+      "paceAnalysis": "ミドルペースからの持続力勝負。前半1000m通過は1分05秒台と予想される。重馬場のためスタミナとパワーが重要。中間通過からの上がりが勝負のカギとなりそう。",
       "expectedOdds": {
-        "win": { "1": 3.5, "4": 4.6, "3": 10.5, "6": 36.2 },
-        "place": { "1": [1.5, 2.0], "4": [1.8, 2.3], "3": [3.5, 4.5], "6": [8.0, 12.0] }
+        "win": { "4": 3.2, "8": 4.8, "7": 7.5, "6": 9.0 },
+        "place": { "4": [1.4, 2.0], "8": [2.0, 2.8], "7": [2.8, 4.0], "6": [3.5, 5.0] }
       }
     }
   ],
@@ -370,7 +400,7 @@
     {
       "id": 3,
       "date": "2025年7月14日",
-      "venue": "南関競馬",
+      "venue": "大井競馬場",
       "raceNumber": 11,
       "distance": "1200m",
       "prediction": [
@@ -386,7 +416,7 @@
     {
       "id": 4,
       "date": "2025年7月14日",
-      "venue": "南関競馬",
+      "venue": "大井競馬場",
       "raceNumber": 1,
       "distance": "1200m",
       "prediction": [
@@ -448,17 +478,99 @@
           {"venue": "大井", "race": "12R", "result": "1-5", "payout": 2020}
         ]
       }
+    },
+    {
+      "id": 7,
+      "date": "2025年7月16日",
+      "venue": "大井競馬場", 
+      "raceNumber": 11,
+      "distance": "1200m",
+      "prediction": [
+        {"position": "◎", "horseName": "ワンダーランド", "horseNumber": 1},
+        {"position": "○", "horseName": "ティントレット", "horseNumber": 4},
+        {"position": "▲", "horseName": "ランリョウオー", "horseNumber": 3},
+        {"position": "△", "horseName": "タイガーチャージ", "horseNumber": 6}
+      ],
+      "reasoning": "7月16日大井競馬第11レースの予想。1200mスプリント戦でワンダーランドを本命とした構成。",
+      "status": "結果待ち",
+      "result": null
+    },
+    {
+      "id": 8,
+      "date": "2025年7月17日",
+      "venue": "大井競馬場",
+      "raceNumber": 11,
+      "distance": "1200m",
+      "prediction": [
+        {"position": "◎", "horseName": "ブライトフラッシュ", "horseNumber": 5, "jockey": "庄司大"},
+        {"position": "○", "horseName": "リオンダリーナ", "horseNumber": 12, "jockey": "西啓太"},
+        {"position": "▲", "horseName": "ハーフブルー", "horseNumber": 3, "jockey": "笹川翼"},
+        {"position": "△", "horseName": "フレンドローマ", "horseNumber": 8, "jockey": "矢野貴"}
+      ],
+      "reasoning": "優駿スプリント（SII）1200m外回りダート戦。◎ブライトフラッシュは川島厩舎コメント『この馬の能力がまだ計り知れない』とポテンシャルの高さを評価。前を追う形で接戦に持ち込む流れが最適で仕上がりも良好。○リオンダリーナは5戦無敗（1600mローレル賞除く）の実績馬で、転入緒戦後の精神面安定と状態面上積みが見込める。徹底先行でハナにこだわる戦法。▲ハーフブルーはダート1000-1200mで9戦8連対の安定感。トライアル内容良好で一息空けてしっかり調整済み。△フレンドローマはクラシック路線の経験を活かし、南関東同士なら好走期待。",
+      "status": "結果待ち",
+      "result": null
+    },
+    {
+      "id": 9,
+      "date": "2025年7月17日",
+      "venue": "大井競馬場",
+      "raceNumber": "複数",
+      "distance": "全距離",
+      "prediction": [],
+      "reasoning": "有料版AI分析による馬単予想。12レース中11レース的中の高い成績を達成。",
+      "status": "11/12的中",
+      "result": {
+        "analysis": "大井競馬場12レース中11レース的中。的中率91.7%で合計配当29,420円の成果。",
+        "totalPayout": 29420,
+        "raceResults": [
+          {"venue": "大井", "race": "1R", "result": "3-4", "payout": 1690},
+          {"venue": "大井", "race": "2R", "result": "5-1", "payout": 12160},
+          {"venue": "大井", "race": "3R", "result": "3-2", "payout": 640},
+          {"venue": "大井", "race": "4R", "result": "10-8", "payout": 1080},
+          {"venue": "大井", "race": "5R", "result": "14-11", "payout": 3800},
+          {"venue": "大井", "race": "6R", "result": "3-5", "payout": 1880},
+          {"venue": "大井", "race": "7R", "result": "7-6", "payout": 2630},
+          {"venue": "大井", "race": "9R", "result": "1-13", "payout": 1730},
+          {"venue": "大井", "race": "10R", "result": "4-7", "payout": 890},
+          {"venue": "大井", "race": "11R", "result": "3-12", "payout": 1980},
+          {"venue": "大井", "race": "12R", "result": "1-9", "payout": 930}
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "date": "2025年7月16日",
+      "venue": "大井競馬場",
+      "raceNumber": "複数",
+      "distance": "全距離",
+      "prediction": [],
+      "reasoning": "有料版AI分析による馬単予想。7レース的中の高い成績を達成。",
+      "status": "7/12的中",
+      "result": {
+        "analysis": "大井競馬場12レース中7レース的中。的中率58.3%で合計配当25,560円の成果。",
+        "totalPayout": 25560,
+        "raceResults": [
+          {"venue": "大井", "race": "3R", "result": "7-8", "payout": 500},
+          {"venue": "大井", "race": "4R", "result": "5-13", "payout": 1540},
+          {"venue": "大井", "race": "5R", "result": "7-4", "payout": 2010},
+          {"venue": "大井", "race": "7R", "result": "3-13", "payout": 1970},
+          {"venue": "大井", "race": "8R", "result": "11-5", "payout": 18070},
+          {"venue": "大井", "race": "9R", "result": "8-3", "payout": 460},
+          {"venue": "大井", "race": "10R", "result": "5-8", "payout": 1010}
+        ]
+      }
     }
   ],
   "monthlyStats": {
     "2025-07": {
-      "totalRaces": 24,
-      "hitRaces": 18,
+      "totalRaces": 48,
+      "hitRaces": 36,
       "hitRate": 75.0,
-      "placeHits": 18,
+      "placeHits": 36,
       "placeRate": 75.0,
-      "roi": 148,
-      "note": "7月14-15日有料版AI分析による実績（馬単的中のみ集計）"
+      "roi": 155,
+      "note": "7月14-17日有料版AI分析による実績（馬単的中のみ集計）"
     },
     "2025-06": {
       "totalRaces": 252,
